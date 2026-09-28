@@ -30,7 +30,7 @@ Le cœur de l'analyse a consisté à isoler les minutes où le chat s'enflamme c
 
 **Classement des marques uniquement pendant ces pics émotionnels :** 
 
-1. **ALDI :** 406 mentions 🏆 (Grand vainqueur du timing)
+1. **ALDI :** 406 mentions (Grand vainqueur du timing)
 2. **TCL :** 386 mentions
 3. **Deezer :** 382 mentions
 
