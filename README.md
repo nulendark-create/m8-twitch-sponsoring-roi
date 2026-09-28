@@ -1,41 +1,43 @@
 # m8-twitch-sponsoring-roi
-Analyse du ROI de Sponsoring E-sport via le chat Twitch (Cas : Gentle Mates)
-# 🎮 Analyse du ROI de Sponsoring E-sport via les Émotions du Chat Twitch (Cas : Gentle Mates)
+Impact du Sponsoring E-sport : Ce que le chat Twitch nous dit du ROI (Cas : Gentle Mates)
 
-## 📌 Présentation du Projet
-Dans l'e-sport, mesurer l'impact réel des sponsors reste un défi majeur. Ce projet de Data Analysis a pour objectif d'évaluer l'efficacité des sponsors officiels de la structure **Gentle Mates (ALDI, TCL, Deezer)** en corrélant le volume des messages et la "hype" du chat Twitch avec la mémorisation des marques par les spectateurs.
+### Le pitch
 
-L'analyse repose sur le traitement de **5 000 messages** récupérés lors d'une diffusion de match, analysés minute par minute pour en extraire des insights marketing actionnables.
+Dans l'e-sport, mesurer l'efficacité d'un sponsor va bien au-delà du simple temps d'affichage d'un logo à l'écran. Ce projet vise à évaluer l'impact réel des sponsors officiels de **Gentle Mates (ALDI, TCL, Deezer)** en analysant les réactions en direct des spectateurs. 
 
----
+L'objectif ? Déterminer si les marques parviennent à s'imposer dans les esprits au moment où l'engagement émotionnel de l'audience est au plus haut. 
 
-## 🛠️ Stack Technique & Compétences Validées
-* **Data Processing & Feature Engineering (Python / Pandas) :** Extraction textuelle par expressions régulières (Regex), création de flags de performance émotifs (`is_hype_message`), et agrégation par fenêtres temporelles de 60 secondes.
-* **Data Visualization (Matplotlib & Seaborn) :** Modélisation de courbes d'engagement chronologiques pour identifier les pics d'audience.
+L'étude s'appuie sur l'analyse de **5 000 messages** d'un chat Twitch, décortiqués minute par minute. 
 
----
+Compétences & Outils
 
-## 📊 Insights Clés & Impact Business
+* **Préparation des données (Python / Pandas) :** Extraction textuelle via Regex, ciblage des mots-clés, création d'un flag d'activation émotionnelle (is_hype_message) et agrégation par fenêtres d'une minute.
+* **Visualisation & Analyse (Matplotlib & Seaborn) :** Modélisation des courbes de volume du chat pour identifier précisément les temps forts du match.
 
-### 1. Classement Global de la visibilité des marques
-Sur l'ensemble de la rencontre, les marques bénéficient d'une visibilité brute très homogène :
+Ce que les données racontent (Insights Business)
+
+### 1. La visibilité globale : Un match très serré
+
+Sur l'ensemble de la diffusion, l'occupation de l'espace textuel par les trois sponsors est quasiment identique. Le "bruit de fond" est très homogène : 
+
 * **Deezer :** 714 mentions
 * **ALDI :** 711 mentions
 * **TCL :** 693 mentions
 
-### 2. Le Phénomène "Hype Peak" (Le Timing Émotionnel)
-Le projet isole les minutes du match où le chat s'enflamme pour soutenir l'équipe (spams de `#M8WIN`, `Gentle Mates`). C'est dans ces moments d'intense émoi que le taux de mémorisation est maximal pour un sponsor.
+### 2. Les pics de "Hype" : Là où tout se joue
 
-**Classement des marques durant les pics de hype :**
-1. **ALDI :** 406 mentions 🏆 (Vainqueur du timing émotionnel)
+Le cœur de l'analyse a consisté à isoler les minutes où le chat s'enflamme complètement (spams de #M8WIN, éclats de joie, soutien massif). C'est durant ces fenêtres d'adrénaline que l'attention est maximale et que la mémorisation d'une marque est la plus forte. 
+
+**Classement des marques uniquement pendant ces pics émotionnels :** 
+
+1. **ALDI :** 406 mentions 🏆 (Grand vainqueur du timing)
 2. **TCL :** 386 mentions
 3. **Deezer :** 382 mentions
 
-**Conclusion Marketing :** Bien que Deezer génère plus de bruit de fond sur la durée totale du flux, **ALDI surclasse ses concurrents aux moments les plus stratégiques du match**, capturant l'attention de l'audience lors des pics d'adrénaline.
+**Le verdict marketing :** Si Deezer s'en sort légèrement mieux sur la longueur en termes de volume brut, **ALDI réalise le meilleur coup stratégique**. La marque capte l'attention au moment exact où la communauté vibre, maximisant ainsi l'impact mémoriel de son sponsoring. 
 
----
+### Contenu du projet
 
-## 📁 Structure du Repository
-* `m8_twitch_sponsoring_roi.ipynb` : Le notebook contenant l'intégralité du code de nettoyage et d'analyse.
-* `dataset_final_m8_twitch.csv` : Le jeu de données final, nettoyé et prêt pour l'intégration BI.
-* `README.md` : Présentation synthétique de l'étude de cas.
+* m8_twitch_sponsoring_roi.ipynb : Le code Python complet (nettoyage, structuration et graphiques).
+* dataset_final_m8_twitch.csv : Le fichier de données finalisé et prêt à être exploité.
+* README.md : Cette synthèse des résultats.
